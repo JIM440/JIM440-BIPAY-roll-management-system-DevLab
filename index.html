@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>BIPAY - Payroll Management System</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <img src="public/images/Favicon.jpg" alt="" />
+        <p class="logo-text">BIPAY</p>
+      </div>
+      <div class="nav-icons">
+        <div class="language">
+          <i class="bi bi-globe"></i>
+          <p>EN</p>
+        </div>
+        <i class="bi bi-bell"></i>
+        <img src="public/images/Profile.png" alt="" class="profile" />
+        <i class='bx bx-menu menu-icon'></i>      </div>
+    </nav>
+    <!-- main -->
+    <main>
+      <!-- side-menu -->
+      <aside class="menu-left">
+        <i class="bx bx-x"></i>
+        <ul>
+          <li>
+            <a class="dash" href=""
+              ><i class="bi bi-house-door"></i>
+              <p>Dashboard</p></a
+            >
+          </li>
+          <li>
+            <a href="jobDesk.html"
+              ><i class="bi bi-shop"></i>
+              <p>Job Desk</p></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><div>
+                <i class="bi bi-person"></i>
+                <p>Employee</p>
+              </div>
+              <i class="bi bi-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><div>
+                <i class="bi bi-arrow-bar-right"></i>
+                <p>Leave</p>
+              </div>
+              <i class="bi bi-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a class="attend-btn actve" href=""
+              ><div>
+                <i class="bi bi-clock"></i>
+                <p>Attendance</p>
+              </div>
+              <i class="bi bi-chevron-down"></i
+            ></a>
+          </li>
+          <div class="attendance">
+            <a href="index.html" class="active">Daily Log</a>
+            <a href="request.html">Request</a>
+            <a href="#">Details</a>
+            <a href="summary.html">Summary</a>
+          </div>
+          <li>
+            <a href=""
+              ><div>
+                <i class="bi bi-folder"></i>
+                <p>Administration</p>
+              </div>
+              <i class="bi bi-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><div>
+                <i class="bi bi-gear"></i>
+                <p>Setting</p>
+              </div>
+              <i class="bi bi-chevron-down"></i
+            ></a>
+          </li>
+        </ul>
+      </aside>
+      <!-- side menu right -->
+      <div class="menu-right">
+        <a href="" class="link">Attendance <i class='bx bx-chevron-right' ></i> <p>Daily Log</p></a>
+        <div class="daily-log">
+          <h2>Daily Log</h2>
+          <div>
+            <button class="btn-black">
+              <i class="bx bx-upload bx-rotate-90"></i>
+              Add Attendance
+            </button>
+            <button class="btn-black">
+              <i class="bx bx-upload bx-rotate-180"></i>
+              Import
+            </button>
+            <button class="btn-black">
+              <i class="bx bx-upload"></i>
+              Export
+            </button>
+            <button class="btn-white">
+              <i class="bi bi-gear"></i>
+              Setting
+            </button>
+          </div>
+        </div>
+        <div class="daily-log-data">
+          <!-- btn group -->
+          <div class="btn-group">
+            <div class="btns">
+              <button class="btn-white">Apply between</button
+              ><button class="btn-white">Department</button
+              ><button class="btn-white">Work shift</button
+              ><button class="btn-white">Rejected</button
+              ><button class="btn-white">Duration</button>
+            </div>
+            <div class="search">
+              <i class="bx bx-search-alt-2"></i>
+              <input type="search" name="" id="" placeholder="search"/>
+            </div>
+          </div>
+          <!-- table-header -->
+            <div class="table">
+              <table>
+                <tr>
+                  <thead>
+                    <tr>
+                      <th>Profile</th>
+                      <th>Punch In</th>
+                      <th>Geolocation</th>
+                      <th>Punched Out</th>
+                      <th>Behaviour</th>
+                      <th>Total Hours</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="profile"><img src="public/images/Ellipse 534.jpg" alt=""><p>Jeremy Neigh</p></td>
+                    <td>9/23/16</td>
+                    <td>15h 40m</td>
+                    <td>Design</td>
+                    <td>DebitNoteMckee.jpg</td>
+                    <td>Busy</td>
+                    <td><button><i class='bx bx-dots-vertical-rounded' ></i></button></td>
+                  </tr>
+                  <tr>
+                    <td class="profile"><img src="public/images/Ellipse 535.jpg" alt=""><p>Annette Black</p></td>
+                    <td>7/27/13</td>
+                    <td>11h 45m</td>
+                    <td>Product</td>
+                    <td>debitnote_0310.xlsx</td>
+                    <td>Busy</td>
+                    <td><button><i class='bx bx-dots-vertical-rounded' ></i></button></td>
+                  </tr>
+                  <tr>
+                    <td class="profile"><img src="public/images/Ellipse 536.jpg" alt=""><p>Theresa Webb</p></td>
+                    <td>11/7/16</td>
+                    <td>10h 25m</td>
+                    <td>Marketing</td>
+                    <td>MckeeDebit1o1.pdf</td>
+                    <td>Ready</td>
+                    <td><button><i class='bx bx-dots-vertical-rounded' ></i></button></td>
+                  </tr>
+                  <tr>
+<td class="profile"><img src="public/images/Ellipse 537.jpg" alt=""><p>Kathryn Murphy</p></td>
+                    <td>6/19/14</td>
+                    <td>16h 55m</td>
+                    <td>Support</td>
+                    <td>dealsheet2020.pdf</td>
+                    <td>Busy</td>
+                    <td><button><i class='bx bx-dots-vertical-rounded' ></i></button></td>
+                  </tr>
+                  <tr>
+                    <td class="profile"><img src="public/images/Ellipse 538.jpg" alt=""><p>Courtney Hnery</p></td>
+                    <td>7/11/19</td>
+                    <td>15h 45m</td>
+                    <td>Operations</td>
+                    <td>debitnote_march.pdf</td>
+                    <td>Ready</td>
+                    <td><button><i class='bx bx-dots-vertical-rounded' ></i></button></td>
+                  </tr>
+                  <tr>
+                    <td class="profile"><img src="public/images/Ellipse 539.jpg" alt=""><p>Jane Cooper</p></td>
+                    <td>8/2/19</td>
+                    <td>10h 45m</td>
+                    <td>HR</td>
+                    <td>dealsheet_march.xlsx</td>
+                    <td>Busy</td>
+                    <td><button><i class='bx bx-dots-vertical-rounded' ></i></button></td>
+                  </tr>
+                </tr>
+              </table>
+            </div>
+            <!-- table-data -->
+          </table>
+          <!-- pagination -->
+          <div class="pagination">
+            <button>
+              <i class="bx bx-chevron-right"></i>
+            </button>
+            <button>Prev</button>
+            <button class="btn-blue">Next</button>
+
+            <p class="page">
+              Page: <input type="number" class="page-num" value="1"> of
+              <span class="blue">100</span>
+            </p>
+            <select name="" id="">
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

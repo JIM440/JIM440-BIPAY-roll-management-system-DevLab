@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="jobDesk.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>BIPAY - Payroll Management System</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <img src="public/images/Favicon.jpg" alt="" />
+        <p class="logo-text">BIPAY</p>
+      </div>
+      <div class="nav-icons">
+        <div class="language">
+          <i class="bi bi-globe"></i>
+          <p>EN</p>
+        </div>
+        <i class="bi bi-bell"></i>
+        <img src="public/images/Profile.png" alt="" class="profile" />
+        <i class='bx bx-menu menu-icon'></i>      </div>
+    </nav>
+    <!-- main -->
+    <div class="jobDesk">
+      <!-- side-menu -->
+      <aside class="menu-left">
+        <i class="bx bx-x"></i>
+        <ul>
+          <li>
+            <a class="dash" href=""
+              ><i class="bi bi-house-door"></i>
+              <p>Dashboard</p></a
+            >
+          </li>
+          <li>
+            <a class="active" href="jobDesk.html"
+              ><i class="bi bi-shop"></i>
+              <p>Job Desk</p></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><div>
+                <i class="bi bi-person"></i>
+                <p>Employee</p>
+              </div>
+              <i class="bi bi-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><div>
+                <i class="bi bi-arrow-bar-right"></i>
+                <p>Leave</p>
+              </div>
+              <i class="bi bi-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a class="attend-btn actve" href=""
+              ><div>
+                <i class="bi bi-clock"></i>
+                <p>Attendance</p>
+              </div>
+              <i class="bi bi-chevron-down"></i
+            ></a>
+          </li>
+          <div class="attendance">
+            <a href="index.html">Daily Log</a>
+            <a href="request.html">Request</a>
+            <a href="#">Details</a>
+            <a href="summary.html">Summary</a>
+          </div>
+          <li>
+            <a href=""
+              ><div>
+                <i class="bi bi-folder"></i>
+                <p>Administration</p>
+              </div>
+              <i class="bi bi-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><div>
+                <i class="bi bi-gear"></i>
+                <p>Setting</p>
+              </div>
+              <i class="bi bi-chevron-down"></i
+            ></a>
+          </li>
+        </ul>
+      </aside>
+      <!-- side menu right -->
+      <div class="menu-right">
+        <a href="" class="link">Job Desk <i class='bx bx-chevron-right' ></i> <p>Attendance</p></a>
+        <div class="daily-log">
+          <h2>Job Desk</h2>
+          <div>
+            <button class="btn-black jobBtn">
+              <i class="bx bx-plus"></i>
+              Action
+          </div>
+        </div>
+        <!-- 
+          profile stats
+         -->
+        <!-- jobdesk -->
+        <div class="job-desk-container">
+          <div class="job-desk-boxes profile-job">
+            <div class="user-profile">
+              <img src="public/images/Ellipse 535.jpg" alt="">
+              <div>
+                <h2>Kimi Raikkonen</h2>
+                <p>UX Designer</p>
+              </div>
+            </div>
+            <div class="info">
+              <h2>Info</h2>
+              <div>
+                <img src="public/images/clipboard.jpg" alt="">
+                <div>
+                  <h2>Admin & HRM</h2>
+                  <p>Department</p>
+                </div>
+              </div>
+              <div>
+<img src="public/images/wallet.jpg" alt="">                <div>
+                  <h2 class="green">$ 40,000</h2>
+                  <p>Salary</p>
+                </div>
+              </div>
+              <div>
+                <i class='bx bx-time' ></i>
+                <div>
+                  <h2>Regular</h2>
+                  <p>Work Shift</p>
+                </div>
+              </div>
+              <div>
+                <img src="public/images/calendar-check.jpg" alt="">
+                <div>
+                  <h2>12 February 2023</h2>
+                  <p>Joining Date</p>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="contact">
+              <h2>Contact</h2>
+              <div>
+                <i class='bx bx-envelope' ></i>
+                <div>
+                  <h2>Email</h2>
+                  <p>alwissuryatmaja@gmail.com</p>
+                </div>
+              </div>
+              <div>
+                <i class="bi bi-phone"></i>
+                <div>
+                  <h2>Phone</h2>
+                  <p>+6282283386756</p>
+                </div>
+              </div>
+              <div>
+                <i class="bi bi-globe"></i>
+                <div>
+                  <h2>Website</h2>
+                  <p class="blue">https://bit.ly/3uOJF79</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="job-desk-boxes attendance-job">
+            <div class="btn-container tab-btn-container">
+              <button class="tab">Allowance</button>
+              <button class="tab active">Attendance</button>
+              <button class="tab">Leave</button>
+              <button class="tab">Folder</button>
+              <button class="tab">Assets</button>
+              <button class="tab">History</button>
+              <button class="tab">Salary</button>
+              <button class="tab">Pay run</button>
+              <button class="tab">Slip</button>
+              <button class="tab">Address</button>
+              <button class="tab">Contact</button>
+            </div>
+            <div class="attendance-stats">
+              <div class="date-attendance">
+                <h2>Attendance</h2>
+                <img src="public/images/Select Date Trigger.jpg" alt="">
+              </div>
+
+              <div class="date-histograms">
+                <div>
+                  <h2>23 Days</h2>
+                  <p>Regular</p>
+                </div>
+                <div>
+                  <h2>16 Days</h2>
+                  <p>Early</p>
+                </div>
+                <div>
+                  <h2>12 Days</h2>
+                  <p>Late</p>
+                </div>
+                <div>
+                  <h2>10 Days</h2>
+                  <p>Leave</p>
+                </div>
+              </div>
+              <div class="timing-stats-parent">
+                <div class="timing-stats">
+                  <div>
+                    <h3>153:00:00</h3>
+                    <p>Total Schedule Hour</p>
+                  </div>
+                  <div>
+                    <h3>00:00:00</h3>
+                    <p>Leave hour</p>
+                  </div>
+                  <div>
+                    <h3 class="blue">%97.89</h3>
+                    <p>Total work availity</p>
+                  </div>
+                  <div>
+                    <h3 class="green">16 days</h3>
+                    <p>Total active Hour</p>
+                  </div>
+                  <div>
+                    <h3 class="red">-52 hour</h3>
+                    <p>Balance</p>
+                  </div>
+                  <div>
+                    <h3>Early</h3>
+                    <p>Average Behaviour</p>
+                  </div>
+                </div>
+              </div>
+              <div class="table-jobDesk">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Punched In</th>
+                      <th>In Geolocation</th>
+                      <th>Punched Out</th>
+                      <th>Out Geolocation</th>
+                      <th>Behaviour</th>
+                      <th>Type</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>16/08/2013</td>
+                    <td>16/08/2013</td>
+                    <td>Germany</td>
+                    <td>18/09/2016</td>
+                    <td>Vietnam</td>
+                    <td>Late</td>
+                    <td>Full Amount</td>
+                  </tr>
+                  <tr>
+                    <td>12/06/2020</td>
+                    <td>15/08/2017</td>
+                    <td>Vietnam</td>
+                    <td>18/09/2016</td>
+                    <td>Nepal</td>
+                    <td>Late</td>
+                    <td>Full Amount</td>
+                  </tr>
+                  <tr>
+                    <td>16/08/2013</td>
+                    <td>16/08/2013</td>
+                    <td>Germany</td>
+                    <td>18/09/2016</td>
+                    <td>Vietnam</td>
+                    <td>Late</td>
+                    <td>Full Amount</td>
+                  </tr>
+                  <tr>
+                    <td>12/06/2020</td>
+                    <td>07/05/2016</td>
+                    <td>Netherlands</td>
+                    <td>12/08/2017</td>
+                    <td>Mongolia</td>
+                    <td>Late</td>
+                    <td>Recuring</td>
+                  </tr>
+                  <tr>
+                    <td>28/10/2012</td>
+                    <td>15/08/2017</td>
+                    <td>Canada</td>
+                    <td>07/05/2016</td>
+                    <td>Myanmar</td>
+                    <td>Late</td>
+                    <td>Full Amount</td>
+                  </tr>
+                  <tr>
+                    <td>15/08/2017</td>
+                    <td>28/10/2012</td>
+                    <td>Myanmar</td>
+                    <td>18/09/2016</td>
+                    <td>United States</td>
+                    <td>On Time</td>
+                    <td>One-Time</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="pagination">
+                <button>
+                  <i class="bx bx-chevron-right"></i>
+                </button>
+                <button>Prev</button>
+                <button class="btn-blue">Next</button>
+    
+                <p class="page">
+                  Page: <input type="number" class="page-num" value="1"> of
+                  <span class="blue">100</span>
+                </p>
+                <select name="" id="">
+                  <option value="10">10</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
