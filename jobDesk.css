@@ -114,6 +114,14 @@ aside {
   background: var(--neutral-20, #f5f5f5);
   box-shadow: -1px 0px 0px #d1d4db inset;
   display: none;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+aside .bx-x {
+  display: block;
 }
 
 aside ul {
@@ -230,6 +238,9 @@ a.active {
   position: static;
 }
 
+aside.active {
+  display: flex;
+}
 @media (min-width: 1440px) {
   aside {
     display: flex;
@@ -241,7 +252,6 @@ aside .bx-x {
   top: 10px;
   left: 180px;
   cursor: pointer;
-  display: none;
 }
 
 @media (max-width: 1200px) {
@@ -255,14 +265,6 @@ aside .bx-x {
   }
   .pagination {
     width: 100%;
-  }
-
-  aside .bx-x {
-    display: block;
-  }
-
-  aside.active {
-    display: flex;
   }
 }
 
