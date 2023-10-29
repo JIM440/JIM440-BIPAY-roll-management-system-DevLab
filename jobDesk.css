@@ -708,12 +708,12 @@ input[type='number'] {
 table {
   border-collapse: collapse;
   margin-top: 24px;
-  overflow: scroll;
+  overflow-x: scroll;
   width: 100%;
 }
 
 .table-jobDesk {
-  overflow: scroll;
+  overflow-x: scroll;
   width: 100%;
 }
 
@@ -821,7 +821,7 @@ td {
 
     scrollbar-width: none;
 
-    overflow: scroll;
+    overflow-x: scroll;
   }
   .date-histograms > div:nth-child(1) {
     height: 159px;
