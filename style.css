@@ -168,6 +168,9 @@ aside ul li .bi-chevron-down {
 .attend-btn.active {
   background: var(--neutral-40, #e0e0e0);
 }
+.bgc {
+  background: var(--neutral-40, #e0e0e0);
+}
 .attend-btn.active i:nth-child(2) {
   rotate: 180deg;
 }

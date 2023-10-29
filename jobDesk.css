@@ -114,14 +114,7 @@ aside {
   background: var(--neutral-20, #f5f5f5);
   box-shadow: -1px 0px 0px #d1d4db inset;
   display: none;
-  position: fixed;
   height: 100vh;
-  top: 0;
-  left: 0;
-}
-
-aside .bx-x {
-  display: block;
 }
 
 aside ul {
@@ -174,9 +167,6 @@ aside ul li .bi-chevron-down {
 a.active {
   background: var(--neutral-40, #e0e0e0);
 }
-.attend-btn.active i:nth-child(2) {
-  rotate: 180deg;
-}
 
 .attendance {
   width: 100%;
@@ -202,6 +192,9 @@ a.active {
 .attendance a:hover {
   background: var(--primary-surface, #d3d3d9);
   width: 100%;
+}
+aside .bx-x {
+  display: none;
 }
 
 /* right menu */
@@ -247,13 +240,6 @@ aside.active {
   }
 }
 
-aside .bx-x {
-  position: relative;
-  top: 10px;
-  left: 180px;
-  cursor: pointer;
-}
-
 @media (max-width: 1200px) {
   aside {
     position: fixed;
@@ -262,9 +248,19 @@ aside .bx-x {
     left: 0;
     max-width: 250px;
     display: none;
+    height: 100vh;
+  }
+  aside .bx-x {
+    position: relative;
+    top: 10px;
+    left: 180px;
+    cursor: pointer;
   }
   .pagination {
     width: 100%;
+  }
+  aside .bx-x {
+    display: block;
   }
 }
 

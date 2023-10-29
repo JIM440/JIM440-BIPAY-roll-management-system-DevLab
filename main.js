@@ -2,6 +2,11 @@ const attenBtn = document.querySelector('.attend-btn')
 
 const attendance = document.querySelector('.attendance')
 
+document.addEventListener('DOMContentLoaded', ()=>{
+        attendance.classList.remove('active')
+        attenBtn.classList.remove('active')
+})
+
 attenBtn.addEventListener('click', (event) => {
     event.preventDefault()
     attenBtn.classList.toggle('active')
